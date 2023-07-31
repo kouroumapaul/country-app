@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { axiosInstance } from '../plugins/axios';
 export const useCountryStore = defineStore('CountryStore', () => {
   const countries = ref([] );
-  const country = ref({})
+  const country = ref()
 
   async function getCountries(): Promise<void> {
     countries.value = (await axiosInstance.get(`all`)).data;

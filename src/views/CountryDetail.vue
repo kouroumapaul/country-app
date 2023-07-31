@@ -12,9 +12,7 @@ const { searchByCode } = countryStore;
 const param = useRouter().currentRoute.value.params.code;
 
 onMounted(() => {
-  searchByCode(param).then(() => {
-    console.log(country.value[0]);
-  });
+  searchByCode(param.toString())
 });
 </script>
 <template>

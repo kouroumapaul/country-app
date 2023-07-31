@@ -5,10 +5,6 @@ import { useCountryStore } from "../store/CountryStore";
 import { storeToRefs } from "pinia";
 import { ref } from "vue";
 
-const getFirstCapital = (country) => {
-      const firstCapital = ref(country.capital[0]);
-      return firstCapital.value;
-};
 
 const searchValue = ref("");
 
